@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>词汇量测试</title>
+
+    <link rel="stylesheet" th:href="@{/css/base.css}" />
+    <link rel="stylesheet" th:href="@{/css/index.css}"/>
+    <link rel="stylesheet" th:href="@{/css/common.css}"/>
+    <link rel="stylesheet" th:href="@{/css/question.css}" />
+    <link rel="stylesheet" th:href="@{/css/test.css}"/>
+    <link rel="stylesheet" th:href="@{/css/res.css}" />
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/all.js"></script>
+</head>
+<body>
+<div class="w">
+<!--    词库选择页-->
+    <div class="content" id="index">
+        <div class="range" id="range">
+            <div class="head"><span>词汇量测试</span></div>
+            <div class="bookType">
+                <a href = "javascript:;" onclick="getWords('pri')">小学词汇</a>
+                <a href = "javascript:;" onclick="getWords('middle')">初中词汇</a>
+                <a href = "javascript:;" onclick="getWords('high')">高中词汇</a>
+                <a href = "javascript:;" onclick="getWords('kaoyan')">考研词汇</a>
+                <a href = "javascript:;" onclick="getWords('cet4')">四级词汇</a>
+                <a href = "javascript:;" onclick="getWords('cet6')">六级词汇</a>
+                <a href = "javascript:;" onclick="getWords('toefl')">托福词汇</a>
+                <a href = "javascript:;" onclick="getWords('gre')">GRE词汇</a>
+            </div>
+        </div>
+
+    </div>
+
+<!--中小学词库测试页面-->
+    <div class="content" id="question" hidden>
+        <div class="head"><span>请选择正确中文释义</span><span class="count" id="count"></span></div>
+        <div class="checked_content" id="checked_content">
+            <!--        <label th:each="role : ${param.test_word}">  th:text="${words[0].word}"-->
+            <div class="word-content" id="word-content" >&nbsp</div>
+            <div class="answer-content" id="ans
+            wer-content">
+                <a href="javascript:" id="answer1" onclick="reveal(1);"><span class="trans1" id="trans1"></span></a>
+                <a href="javascript:" id="answer2" onclick="reveal(2);"><span class="trans2" id="trans2"></span></a>
+                <a href="javascript:" id="answer3" onclick="reveal(3);"><span class="trans3" id="trans3"></span></a>
+                <a href="javascript:" id="answer4" onclick="reveal(4);"><span class="trans4" id="trans4"></span></a>
+                <a href="javascript:" id="answer5" onclick="next()"><span class="trans5" id="trans5">E. 不认识</span></a>
+            </div>
+        </div>
+    </div>
+<!--其它词库测试页面-->
+    <div class="content test" id="test" hidden>
+        <div class="head">
+            <span>请勾选你至少知道一个中文释义的单词</span>
+            <label class="check_all"><input type="checkbox" onclick="swapCheck();" id="check_all"/> 全选</label>
+        </div>
+        <!--        选词模块-->
+        <div class="check_content" id="check_content">
+            <div class="c_content">
+                <div class="words-content clearfix" id="words-content">
+                </div>
+            </div>
+            <button class="next"  id="next" onclick="countCheck();next()">下一步</button>
+        </div>
+    </div>
+
+<!--测试结果-->
+    <div class="content res" id="res" hidden>
+        <div class="head"><span>测试结果</span></div>
+        <div class="res_area">
+            <div class="res_title">你的词汇量约为</div>
+            <div class="res_num" id="res_num">2333</div>
+            <div class="res_source" id="res_source">所选词库为：</div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
+
+
+

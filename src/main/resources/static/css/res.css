@@ -1,0 +1,25 @@
+.res{
+}
+.res_area{
+    height: 550px;
+    width: 1100px;
+    margin-top: 10%;
+}
+.res_title{
+    text-align: center;
+    font-size: 28px;
+    color: black;
+}
+.res_source{
+    text-align: center;
+    font-size: 18px;
+    color: gray;
+}
+.res_num{
+    margin-top: 40px;
+    margin-down: 10px;
+    text-align: center;
+    font-size: 64px;
+    font-weight: 700;
+    color: black;
+}

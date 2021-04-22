@@ -1,0 +1,68 @@
+.head span{
+    display: inline-block;
+}
+.check_all {
+    float: right;
+    margin: auto 0;
+}
+.check_all input{
+    vertical-align: middle;
+    padding-right: 10px;
+}
+.check_all span{
+    padding-left: 8px;
+    line-height: 60px;
+    font-size: 14px;
+}
+.check_content{
+    width: 1150px;
+    /*height: 500px;*/
+    margin: 30px auto 30px;
+}
+.c_content{
+    overflow: auto;
+    height: 450px;
+}
+.words-content{
+    position: relative;
+    padding: 0 20px;
+}
+.words-content label{
+    float: left;
+    box-sizing: border-box;
+    margin-bottom: 0;
+    width: 20%;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 20px;
+    font-size: 14px;
+}
+.words-content label span {
+    padding-left: 12px;
+}
+.words-content label:nth-child(10n-4){
+    /*background-color: #fff7a3;*/
+    background-color: #ececec;
+}
+.words-content label:nth-child(10n-3){
+    /*background-color: #fff7a3;*/
+    background-color: #ececec;
+}
+.words-content label:nth-child(10n-2){
+    /*background-color: #fff7a3;*/
+    background-color: #ececec;
+}
+.words-content label:nth-child(10n-1){
+    /*background-color: #fff7a3;*/
+    background-color: #ececec;
+}
+.words-content label:nth-child(10n){
+    /*background-color: #fff7a3;*/
+    background-color: #ececec;
+}
+
+.next {
+    display: block;
+    margin: 10px auto ;
+}
+

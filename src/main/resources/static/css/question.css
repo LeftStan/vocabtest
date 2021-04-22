@@ -1,0 +1,69 @@
+.head span{
+    display: inline-block;
+}
+.head .count{
+    float:right;
+    font-size: 24px;
+    color:gray;
+}
+
+.word-content {
+    float: left;
+    width: 45%;
+    height: 100%;
+    line-height: 500px;
+    text-align: center;
+    /*background-color: pink;*/
+    color: gray;
+    font-size: 50px;
+
+}
+.answer-content {
+    /*float: left;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: 500px;
+    /*background-color: #ffff00;*/
+    font-size: 28px;
+}
+.answer-content a{
+    position: relative;
+    overflow: hidden;
+    display: block;
+    min-height: 30px;
+    margin-right: 50px;
+    padding: 15px;
+    line-height: 2;
+    border-top: 1px solid #fff7a3;
+    font-size: 24px;
+    color: #333;
+}
+.answer-content a:first-child{
+    border-top: none;
+}
+.trans1:before{
+    content:"A. ";
+}
+.trans2:before{
+    content:"B. ";
+}
+.trans3:before{
+    content:"C. ";
+}
+.trans4:before{
+    content:"D. ";
+}
+.correct{
+    background-color: #fbff75;
+
+}
+.wrong{
+    background-color: #ffcccc;
+}
+.choose_img{
+    float:right;
+    width: 40px;
+    height: 45px;
+}
